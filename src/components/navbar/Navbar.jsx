@@ -7,7 +7,9 @@ const Navbar = () => {
             <div className="wrapper">
                 <span>Smth</span>
                 <div className="social">
-                    <a href=""></a>
+                    <a href="#"><img src="/facebook.png" alt=""/></a>
+                    <a href="#"><img src="/instagram.png" alt=""/></a>
+                    <a href="#"><img src="/LinkedIn_icon.svg" alt=""/></a>
                 </div>
             </div>
         </div>
