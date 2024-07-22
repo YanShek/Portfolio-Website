@@ -1,10 +1,42 @@
 import "./sidebar.scss"
-import { motion } from "framer-motion"
+import Links from "./links/Links"
+import ToggleButton from "./toggleButton/ToggleButton"
+import {motion} from "framer-motion"
+import {useState} from "react"
+
+
+const variants = {
+    open: {
+        clipPath: "circle(1200px at 50px 50px)",
+        transitionL:{
+            type:"spring",
+            stifness:300,
+            damping:200
+    },
+},
+    closed: {
+        clipPath: "circle(30px at 50px 50px)",
+        transitionL:{
+            delay: 0.5,
+            type:"spring",
+            stifness:400,
+            damping:40
+        },
+    }, 
+};
+
 
 const Sidebar = () => {
-    return <div className="sidebar"> 
-    <motion.div className="optionBox" initial={{opacity:50, size:75}} onHoverStart={{}} transition={{duration:2, delay:2}}></motion.div> 
-    </div>
+
+    const [open, setOpen] = useState(false)
+
+    
+    return <motion.div className="sidebar" animate={open ? "open" :"closed"}> 
+        <motion.div className="bg" variants={variants}>
+            <Links open={open}/>
+        </motion.div>
+        <ToggleButton setOpen={setOpen}/>
+    </motion.div>;
 }
 
 export default Sidebar
