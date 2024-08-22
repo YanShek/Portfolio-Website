@@ -6,24 +6,24 @@ import {useState} from "react"
 
 
 const variants = {
-    open: {
-        clipPath: "circle(1200px at 50px 50px)",
-        transitionL:{
-            type:"spring",
-            stifness:300,
-            damping:200
-    },
-},
-    closed: {
-        clipPath: "circle(30px at 50px 50px)",
-        transitionL:{
-            delay: 0.5,
-            type:"spring",
-            stifness:400,
-            damping:40
+        open: {
+            clipPath: "circle(1200px at 50px 50px)",
+            transitionL:{
+                type:"spring",
+                stifness:300,
+                damping:200
         },
-    }, 
-};
+    },
+        closed: {
+            clipPath: "circle(30px at 50px 50px)",
+            transitionL:{
+                delay: 0.5,
+                type:"spring",
+                stifness:400,
+                damping:40
+            },
+        }, 
+    };
 
 
 const Sidebar = () => {
@@ -33,7 +33,7 @@ const Sidebar = () => {
     
     return <motion.div className="sidebar" animate={open ? "open" :"closed"}> 
         <motion.div className="bg" variants={variants}>
-            <Links open={open}/>
+            <Links/>
         </motion.div>
         <ToggleButton setOpen={setOpen}/>
     </motion.div>;

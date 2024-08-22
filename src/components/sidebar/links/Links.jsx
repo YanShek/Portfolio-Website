@@ -20,12 +20,12 @@ const itemVariants = {
         opacity:1,
     },
     closed:{
-        y: 100,
+        y: 50,
         opacity:0,
     }
 }
 
-const Links = ({open}) => {
+const Links = () => {
 
     const items = [
         "Home", "About", "Portfolio", "Contact"

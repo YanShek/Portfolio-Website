@@ -9,8 +9,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
     </section>
-    <section id="About">Parallax</section>    
-    <section>About</section>
+    <section id="About"> About Me</section>  
     <section id="Portfolio">Parallax</section>
     <section>Portfolio1</section>
     <section>Portfolio2</section>
