@@ -1,0 +1,29 @@
+.projects{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+    .mainCard{
+        background-color: #76ABAE;
+        color: black;
+        height: 450px;
+        width: 250px;
+        border-radius: 10px;
+
+        .imageContainer{
+            border: #76ABAE 1px solid;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imageContainer img{
+            height: 100%;
+            width: auto;
+        }
+    }
+}
