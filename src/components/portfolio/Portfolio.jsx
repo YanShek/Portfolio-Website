@@ -6,11 +6,18 @@ import "react-multi-carousel/lib/styles.css";
 const items = [
   {
     id:1,
-    name: "Uneral Image Recognition",
-    description: "A game using Unreal Engine 4 and TensorFlow to recognize handrawn images and letters ofr the purpose of" 
-    + "hangman and guess the drawing",
-    image: "public/Projects/UnrealAI.png"
+    name: "Unreal Image Recognition",
+    description: "A game using Unreal Engine 4 and TensorFlow to recognize handrawn images and letters for the purpose of" 
+    + " hangman and guess the drawing",
+    image: "/Projects/UnrealAI.png"
+  },
+  {
+    id:2,
+    name: "Course Enrollment System with Server Interaction (Java)",
+    description: "A course enrollment system that allows students to enroll in courses for a specific semester. The request is then sent to a server to be processed",
+    image: "/Projects/Schedule.png"
   }
+
 ]
 
 const Portfolio = () => {
@@ -22,7 +29,7 @@ const Portfolio = () => {
                 <div className='imageContainer'>
                     <img src={p.image} alt=""/>
                 </div>
-                <div>
+                <div className='textContainer'>
                     <p>{p.name}</p>
                     <p>{p.description}</p>
                     <button>View Project</button>
