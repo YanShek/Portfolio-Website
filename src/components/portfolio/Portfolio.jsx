@@ -2,6 +2,9 @@ import React from 'react'
 import './portfolio.scss'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 const items = [
   {
@@ -13,10 +16,21 @@ const items = [
   }
 ]
 
+var settings = { 
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1
+};
+
+
 const Portfolio = () => {
 
   return (
-    <div className="projects"> 
+    
+    <div className="projects">
+       <Slider {...settings}>
         {items.map((p) => (
             <div key={p.id} className="mainCard">
                 <div className='imageContainer'>
@@ -29,7 +43,9 @@ const Portfolio = () => {
                 </div>
             </div>
         ))}
+        </Slider>
     </div>
+    
   )
 }
 
