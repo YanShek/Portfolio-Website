@@ -1,18 +1,16 @@
 import "./navbar.scss"
 import Sidebar from "../sidebar/Sidebar"
-import { motion } from "framer-motion"
 
-const Navbar = () => {
+const Navbar = ({displayText}) => {
     return (
         <div className="navbar">
-            {/* Sidebar */}
             <Sidebar/>
             <div className="wrapper">
-                <span>Yan</span>
+                <span>{displayText}</span>
                 <div className="social">
                     <a href="#"><img src="/facebook.png" alt=""/></a>
-                    <a href="#"><img src="/instagram.png" alt=""/></a>
-                    <a href="#"><img src="/LinkedIn_icon.svg" alt=""/></a>
+                    <a href="https://www.instagram.com/yellow_ice_cube_tray/"><img src="/instagram.png" alt=""/></a>
+                    <a href="www.linkedin.com/in/yan-shek-609369309"><img src="/LinkedIn_icon.svg" alt="LinkedIn"/></a>
                 </div>
             </div>
         </div>

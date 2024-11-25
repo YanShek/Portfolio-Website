@@ -1,4 +1,4 @@
-import {motion, stagger} from "framer-motion"
+import {motion} from "framer-motion"
 
 const variants = {
     open:{

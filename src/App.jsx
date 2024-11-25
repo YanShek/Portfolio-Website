@@ -7,11 +7,11 @@ import Test from "./Test";
 const App = () => {
   return <div>
     <section id="Home">
-      <Navbar/>
+      <Navbar displayText={"Yan"}/>
       <Hero/>
     </section>
     <section id="About">Aboot</section>  
-    <section id="Portfolio">Parallax <Portfolio/></section>
+    <section id="Portfolio"><Portfolio/></section>
     <section id="Contact">Contact</section> 
   
   </div>;
