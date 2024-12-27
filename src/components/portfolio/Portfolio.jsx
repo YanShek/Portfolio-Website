@@ -54,14 +54,16 @@ const Portfolio = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2, // Show 2 slides on medium screens
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: true
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1, // Show 1 slide on small screens
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: true
         }
       }
     ]

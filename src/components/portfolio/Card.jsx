@@ -9,7 +9,7 @@ const Card = ({ name, description, image, link }) => {
         <p>{description}</p>
       </div>
       <div className="card-footer">
-        <a href={link}>Learn More</a>
+        <a href={link} target='_blank'>Learn More</a>
       </div>
     </div>
   );
