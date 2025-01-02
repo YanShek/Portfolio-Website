@@ -40,6 +40,21 @@ const sliderVariants = {
   }
 };
 
+const textVariants = {
+  initial: {
+    y:-500,
+    opacity: 0
+  },
+  animate: {
+    y:0,
+    opacity: 1,
+    transition:{
+      duration: 3,
+      staggerChildren: 0.1
+    }
+  }
+}
+
 
 const Portfolio = () => {
 
@@ -70,7 +85,7 @@ const Portfolio = () => {
   };
 
   return (
-    <motion.div className="projects">
+    <motion.div variants={textVariants} className="projects">
       <Navbar displayText={"Projects"}/>
       <Slider {...settings}>
         {items.map((item) => (

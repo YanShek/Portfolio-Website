@@ -1,0 +1,82 @@
+.about {
+    background: linear-gradient(-180deg, #222831, #505866);
+    height: calc(100vh - 100px);
+    z-index: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row; /* Default side-by-side layout */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px; /* Limits the wrapper's width for larger screens */
+        margin: 0 auto; /* Centers the wrapper within the .about section */
+  
+        /* Adjust for smaller screens */
+        @media (max-width: 768px) {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+        }
+  
+        .textContainer {
+            width: 50%; /* Text takes half of the wrapper width */
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-family: 'Cascadia Code', monospace;
+            color: #fff;
+            text-align: justify;
+    
+            /* Adjust for smaller screens */
+            @media (max-width: 768px) {
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.2rem;
+            }
+    
+            @media (max-width: 480px) {
+            font-size: 1rem;
+            padding: 1rem;
+            }
+            h1{
+                text-align: center;
+            }
+            hr{
+                width: 80%;
+                margin: 2rem auto;
+                border: 1px solid #fff;
+            }
+            p {
+            margin: 0;
+            line-height: 1.8;
+            }
+        }
+    
+        .imageContainer {
+            width: 50%; /* Image takes half of the wrapper width */
+            height: 300px;
+            background: #333; /* Placeholder background */
+            border-radius: 8px;
+    
+            /* Replace with an actual image if needed */
+            background-image: url('/path-to-image.jpg');
+            background-size: cover;
+            background-position: center;
+    
+            /* Adjust for smaller screens */
+            @media (max-width: 768px) {
+            width: 100%;
+            height: 200px;
+            }
+    
+            @media (max-width: 480px) {
+            height: 150px;
+            }
+        }
+        }
+  }
+  
