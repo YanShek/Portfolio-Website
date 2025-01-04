@@ -42,14 +42,14 @@ const sliderVariants = {
 
 const textVariants = {
   initial: {
-    y:-500,
+    x:-50,
     opacity: 0
   },
   animate: {
-    y:0,
+    x:0,
     opacity: 1,
     transition:{
-      duration: 3,
+      duration: 2,
       staggerChildren: 0.1
     }
   }
@@ -85,18 +85,19 @@ const Portfolio = () => {
   };
 
   return (
-    <motion.div variants={textVariants} className="projects">
-      <Navbar displayText={"Projects"}/>
+    <div className="portfolio">
+    <Navbar displayText={"Projects"}/>
+    <motion.div variants={textVariants} initial="initial" whileInView="animate" viewport={{once:false, amount:0.5}} className="projects">
       <Slider {...settings}>
         {items.map((item) => (
           <Card key={item.id} name={item.name} description={item.description} image={item.image} link={item.link}/>
         ))}
       </Slider>
-      <motion.h2 className='slidingText' variants={sliderVariants} initial="initial" animate="animate">
+    </motion.div>
+    <motion.h2 className='slidingText' variants={sliderVariants} initial="initial" animate="animate">
         My projects 
       </motion.h2>
-    </motion.div>
-    
+    </div>
   )
 }
 

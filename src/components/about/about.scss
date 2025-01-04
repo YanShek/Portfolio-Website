@@ -62,11 +62,6 @@
 			background: #333; /* Placeholder background */
 			border-radius: 8px;
 
-			/* Replace with an actual image if needed */
-			background-image: url("/path-to-image.jpg");
-			background-size: cover;
-			background-position: center;
-
 			/* Adjust for smaller screens */
 			@media (max-width: 768px) {
 				width: 100%;

@@ -47,7 +47,8 @@ const Hero = () => {
       <motion.div className="textContainer" 
         variants={textVariants} 
         initial="initial" 
-        animate="animate">
+        whileInView="animate"
+        viewport={{once:false, amount:0.5}}>
 
         <motion.h2 variants={textVariants}>Yan Shek</motion.h2>
         <motion.h1 variants={textVariants}>Welcome to my Site</motion.h1>
@@ -58,7 +59,7 @@ const Hero = () => {
         <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
       </motion.div>
       <motion.div className="slidingTextContainer" 
-        variants={sliderVariants} initial="initial" animate="animate">
+        variants={sliderVariants} initial="initial" animate="animate" whileInView="animate" viewport={{once:false, amount:0.5}}>
         Yan Shek
       </motion.div>
       <div className="imageContainer">

@@ -2,65 +2,69 @@ body {
   overflow-x: hidden;
 }
 
-.projects{
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.portfolio {
     height: 100%;
     background: linear-gradient(-180deg, #222831, #505866);
-    z-index: 0;
-    position: relative;
     overflow: hidden;
     
-    h1 {
-        text-align: center;
-        color: #F0ECE5; // Light color for the heading
-        margin-bottom: 2rem;
-      }
+    .projects{
+      z-index: 0;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      h1 {
+          text-align: center;
+          color: #F0ECE5; // Light color for the heading
+          margin-bottom: 2rem;
+        }
+        
+        .slick-slider{
+          max-width: 90%;
+          margin: 5% auto;
+        }
+
+        .slick-track {
+          display: flex;
+          gap: 20px;
+        }
+
+        .slick-slide img{
+          width: 100%;
+          max-height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+        .slick-prev,
+        .slick-next {
+          z-index: 2;
+        }
       
-      .slick-slider{
-        max-width: 90%;
-        margin: 5% auto;
-      }
-
-      .slick-track {
-        display: flex;
-        gap: 20px;
-      }
-
-      .slick-slide img{
-        width: 100%;
-        max-height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-      }
-      .slick-prev,
-      .slick-next {
-        z-index: 2;
-      }
-    
-      .slick-prev {
-        left: -40px; // Position the left arrow
-      }
-    
-      .slick-next {
-        right: -40px; // Position the right arrow
-      }
-    
-      .slick-dots li button:before {
-        color: #B6BBC4; // Subtle dot color
+        .slick-prev {
+          left: -40px; // Position the left arrow
+        }
+      
+        .slick-next {
+          right: -40px; // Position the right arrow
+        }
+      
+        .slick-dots li button:before {
+          color: #B6BBC4; // Subtle dot color
+          
+        }
+      
+        .slick-dots li.slick-active button:before {
+          color: #F0ECE5; // Highlight active dot
+        }
+        
         
       }
-    
-      .slick-dots li.slick-active button:before {
-        color: #F0ECE5; // Highlight active dot
-      }
-      
       .slidingText{
         position: absolute;
-        font-size: 50vh;
-        bottom: -120px;
+        font-size: 45vh;
+        bottom: 1rem;
         white-space: nowrap;
         color: #ffffff06;
         width: 50%;
