@@ -95,8 +95,8 @@ const Portfolio = () => {
       </Slider>
     </motion.div>
     <motion.h2 className='slidingText' variants={sliderVariants} initial="initial" animate="animate">
-        My projects 
-      </motion.h2>
+      My projects 
+    </motion.h2>
     </div>
   )
 }
