@@ -28,10 +28,10 @@ const items = [
 
 const sliderVariants = {
   initial: {
-    x:"0 px"
+    x:0
   },
   animate: {
-    x:"-400%",
+    x:"-200%",
     transition:{
       repeat: Infinity,
       repeatType: "mirror",
@@ -93,10 +93,11 @@ const Portfolio = () => {
           <Card key={item.id} name={item.name} description={item.description} image={item.image} link={item.link}/>
         ))}
       </Slider>
-    </motion.div>
-    <motion.h2 className='slidingText' variants={sliderVariants} initial="initial" animate="animate">
+      <motion.h2 className='slidingText' variants={sliderVariants} initial="initial" animate="animate">
       My projects 
-    </motion.h2>
+      </motion.h2>
+    </motion.div>
+    
     </div>
   )
 }

@@ -58,13 +58,11 @@ body {
         .slick-dots li.slick-active button:before {
           color: #F0ECE5; // Highlight active dot
         }
-        
-        
-      }
-      .slidingText{
+
+        .slidingText{
         position: absolute;
-        font-size: 45vh;
-        bottom: 1rem;
+        font-size: 35vh;
+        bottom: -20rem;
         white-space: nowrap;
         color: #ffffff06;
         width: 50%;
@@ -72,4 +70,6 @@ body {
         z-index: 1;
         pointer-events: none;
       }
+      }
+      
 }

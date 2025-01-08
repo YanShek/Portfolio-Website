@@ -1,0 +1,49 @@
+.contact{
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #222831, #505866);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: 40%;
+        align-items: center;
+
+        h2{
+            color: #DDE6ED;
+            font-size: 2.5rem;
+            margin-right: 5em;
+        }
+
+        .verticalLine{
+            border-left: 2px solid #DDE6ED;
+            height: 100%;
+            margin: 0 20px;
+        }
+        .contactMethods{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            
+            a{
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            img{
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                margin: 0 10px;
+                z-index: 1;
+
+            }
+        }
+    }
+}
