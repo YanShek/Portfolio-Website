@@ -23,6 +23,20 @@ const items = [
     + " and the server will send back a response to the client. Uses Gradle",
     image: "/Projects/Schedule.png",
     link: "https://github.com/YanShek/JavaServer"
+  },
+  {
+    id:3,
+    name: "Personal Website",
+    description: "The website you are currently on. Built using React and SASS",
+    image: "/website.png",
+    link: "#"
+  },
+  {
+    id:4,
+    name: "Documents Classifier",
+    description: "Using Naive Bayes, classify documents into binary categories. The program will learn from a training set and then classify the documents in the test set",
+    image: "classify-doc.png",
+    link: "https://github.com/YanShek/doc-classifier"
   }
 ]
 
