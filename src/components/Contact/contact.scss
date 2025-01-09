@@ -46,4 +46,16 @@
             }
         }
     }
+    .slider{
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        font-size: 27vh;
+        bottom: 0.001em;
+        white-space: nowrap;
+        color: #ffffff06;
+        width: 50%;
+        font-weight: bold;
+        z-index: 0;
+    }
 }

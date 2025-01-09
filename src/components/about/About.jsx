@@ -27,10 +27,9 @@ const About = () => {
         <motion.div className='textContainer' variants={childVariant}>
           <h1>About me</h1>
           <hr/>
-          <p>I'm a software developer who loves to create and learn new things.
-            I'm currently studying Computer Science at the University of Montreal. I have experience with
-            Java, Python, JavaScript, C++, React, and several little projects in the field of Machine Learning.
-            I'm always looking for new opportunities to learn and grow as a developer.</p>
+          <p>I'm currently studying Computer Science at the University of Montreal. I have experience with
+            Java, Python, JavaScript, C++, React as well as several little projects in the field of Machine Learning and Data Science.
+            I'm always looking for new opportunities to learn and grow in this field.</p>
         </motion.div>
         <motion.div className='imageContainer' variants={childVariant}><img src='path\to\iomage'></img></motion.div>
       </motion.div>
