@@ -62,9 +62,6 @@ const Hero = () => {
         variants={sliderVariants} initial="initial" animate="animate" whileInView="animate" viewport={{once:false, amount:0.5}}>
         Yan Shek
       </motion.div>
-      <div className="imageContainer">
-        <img src="/Hero1.png" alt="" />
-      </div>
       </div>
     </div>
   )
