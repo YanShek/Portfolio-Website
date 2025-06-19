@@ -28,10 +28,11 @@ const About = () => {
           <h1>About me</h1>
           <hr/>
           <p>I'm currently studying Computer Science at the University of Montreal. I have experience with
-            Java, Python, JavaScript, C++, React as well as several little projects in the field of Machine Learning and Data Science.
-            I'm always looking for new opportunities to learn and grow in this field.</p>
+            many languages, mainly Java and Python. I have multiple projects in the field of Machine Learning and Data Science. However, I would consider myself quite skilled 
+            in logical programming as I have completed multiple LeetCode challenges.
+            I'm always looking for new opportunities to learn and grow in the field of Computer Science.</p>
         </motion.div>
-        <motion.div className='imageContainer' variants={childVariant}><img src='path\to\iomage'></img></motion.div>
+        <motion.div className='imageContainer' variants={childVariant}><img src='Montage_YAN_B&W_001.jpg'></img></motion.div>
       </motion.div>
     </div>
   )
