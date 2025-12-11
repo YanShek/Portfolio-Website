@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './portfolio.scss'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Card from './Card';
 import Navbar from '../navbar/Navbar';
 import { motion } from 'framer-motion';
-import { use } from 'react';
 
 
 const sliderVariants = {
@@ -41,22 +40,23 @@ const textVariants = {
 
 const Portfolio = () => {
 
-  const [Projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch('api/projects')
-      .then(res=>{
-        if (!res.ok) {
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch('/api/projects');
+        if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        return res.json();
-      })
-      .then(data => {
+        const data = await response.json();
         setProjects(data);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error('Error fetching projects:', error);
-      });
+      }
+    };
+    
+    fetchProjects();
   }, []);
 
   const settings = {
