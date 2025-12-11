@@ -6,7 +6,7 @@
   "homepage": "https://yanshek.github.io/Portfolio-Website/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node -e \"const fs = require('fs'); if (!fs.existsSync('dist')) { console.error('ERROR: dist folder not found after build!'); process.exit(1); }\"",
     "lint": "eslint Client/src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
